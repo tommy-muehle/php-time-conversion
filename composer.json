@@ -1,0 +1,66 @@
+{
+    "name": "tm/time-conversion",
+    "description": "Convert, compare and operate with time in different units. ",
+    "type": "project",
+    "keywords": [
+        "time",
+        "unit",
+        "time-unit",
+        "conversion",
+        "transform"
+    ],
+    "homepage": "https://github.com/tommy-muehle/php-time-conversion",
+    "authors": [
+        {
+            "name": "Tommy Muehle",
+            "email": "tommy.muehle@gmail.com",
+            "homepage": "https://tommy-muehle.io"
+        }
+    ],
+    "support": {
+        "email": "tommy.muehle@gmail.com",
+        "issues": "https://github.com/tommy-muehle/php-time-conversion/issues",
+        "docs": "https://github.com/tommy-muehle/php-time-conversion/blob/master/README.md",
+        "source": "https://github.com/tommy-muehle/php-time-conversion/tree/master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TM\\TimeConversion\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TM\\TimeConversion\\": "src/",
+            "TM\\TimeConversion\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "tm/tooly-composer-script": "^1.2"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": "Tooly\\ScriptHandler::installPharTools",
+        "post-update-cmd": "Tooly\\ScriptHandler::installPharTools"
+    },
+    "archive": {
+        "exclude": [
+            "tests",
+            "bin"
+        ]
+    },
+    "extra": {
+        "tools": {
+            "phpunit": {
+                "url": "https://phar.phpunit.de/phpunit-5.6.1.phar"
+            }
+        }
+    }
+}
