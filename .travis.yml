@@ -21,7 +21,7 @@ before_install:
 install:
   - composer install --no-interaction --optimize-autoloader
 script:
-  - ./bin/phpunit --coverage-clover build/logs/clover.xml
+  - ./bin/phpunit.phar --coverage-clover build/logs/clover.xml
 after_success:
   - ./bin/test-reporter
 notifications:
