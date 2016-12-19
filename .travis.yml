@@ -23,12 +23,10 @@ install:
 script:
   - ./bin/phpunit --coverage-clover build/logs/clover.xml
 after_success:
-  - {DO_SOMETHING}
+  - ./bin/test-reporter
 notifications:
   email: false
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/{GENERATED_KEY}
-    on_success: always
-    on_failure: always
-    on_start: never
+addons:
+  code_climate:
+    repo_token: 57c9860728e3bf94a48765d4d0041c90bc83aec0f7b526a73c3c06495c3091d9
+

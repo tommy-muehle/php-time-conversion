@@ -39,6 +39,7 @@
         "php": ">=5.6.0"
     },
     "require-dev": {
+        "codeclimate/php-test-reporter": "^0.3.2",
         "tm/tooly-composer-script": "^1.2"
     },
     "config": {
