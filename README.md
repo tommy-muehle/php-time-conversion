@@ -1,6 +1,7 @@
 # php-time-conversion
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg?style=flat-square)](https://php.net/)
+[![Build Status](https://travis-ci.org/tommy-muehle/php-time-conversion.svg?branch=master)](https://travis-ci.org/tommy-muehle/php-time-conversion)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/tommy-muehle/php-time-conversion/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/tommy-muehle/php-time-conversion.svg)](https://github.com/php-time-conversion/issues)
 
